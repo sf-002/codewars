@@ -1,7 +1,6 @@
-//Powers of 2
-//https://www.codewars.com/kata/57a083a57cb1f31db7000028
-function powersOfTwo(n){
-    let exponents = [];
-    for (i = 0; i <= n; i++) exponents.push(Math.pow(2, i));
-    return exponents
+//Gravity Flip
+//https://www.codewars.com/kata/5f70c883e10f9e0001c89673
+const flip=(d, a)=>{
+    (d == 'R') ? a.sort((a, b) => (a - b)) : a.sort((a, b) => (b - a));
+    return a
   }

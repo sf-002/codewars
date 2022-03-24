@@ -1,5 +1,7 @@
-//Opposites Attract
-//https://www.codewars.com/kata/555086d53eac039a2a000083
-function lovefunc(flower1, flower2){
-    return flower1 % 2 != flower2 % 2
+//Volume of a Cuboid
+//https://www.codewars.com/kata/58261acb22be6e2ed800003a
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      return length * width * height
+    }
   }

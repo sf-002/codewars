@@ -1,9 +1,6 @@
-//How many pages in a book?
-//https://www.codewars.com/kata/622de76d28bf330057cd6af8
-function amountOfPages(summary){
-    let i;
-    for (i = 1, n = 1; n <= summary; ++i){
-      n += String(i).length; 
-    }
-    return i-1
+//Points of Reflection
+//https://www.codewars.com/kata/57bfea4cb19505912900012c
+function symmetricPoint(p, q) {
+  
+    return [q[0] + (q[0] - p[0]), q[1] + (q[1] - p[1])]
   }

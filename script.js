@@ -1,6 +1,5 @@
-//Points of Reflection
-//https://www.codewars.com/kata/57bfea4cb19505912900012c
-function symmetricPoint(p, q) {
-  
-    return [q[0] + (q[0] - p[0]), q[1] + (q[1] - p[1])]
+//Pillars
+//https://www.codewars.com/kata/5bb0c58f484fcd170700063d
+function pillars(num_pill, dist, width) {
+    return Math.max(0, dist * (num_pill - 1) * 100 + width * (num_pill - 2));
   }

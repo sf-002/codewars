@@ -1,19 +1,12 @@
-//Assemble string
-//https://www.codewars.com/kata/6210fb7aabf047000f3a3ad6
-function assembleString(array){
-  if (typeof array == 'undefined') array = [];
-  if (typeof array[0] == 'undefined') array[0] = 0;
-//  const wordLen = array[0].length;
-//  const arrLen = array.length;
-  let word = [];
-  for (let i = 0; i < array[0].length; i++) {
-    for (let j = 0; j < array.length; j++) {
-      if (array[j][i] == '*') word[i] = '#'
-      else {
-          word[i] = array[j][i];
-          break;
-        }
-      }
+//Multiples of 3 or 5
+//https://www.codewars.com/kata/514b92a657cdc65150000006
+function solution(number){
+  var sum = 0;
+  
+  for(var i = 1;i< number; i++){
+    if(i % 3 == 0 || i % 5 == 0){
+      sum += i
     }
-  return word.join('');
+  }
+  return sum;
 }

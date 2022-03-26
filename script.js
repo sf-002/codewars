@@ -1,15 +1,11 @@
-//Stop gninnipS My sdroW!
-//https://www.codewars.com/kata/5264d2b162488dc400000001/
-function spinWords(string){
-  let arr = string.split(' ');
-  arr = arr.reduce( function(value, item) {
-    if (item.length >= 5) {
-      item = item.split('').reverse().join('');
-    }
-    value.push(item);
-    return value;
-  }, [])
-  return arr.join(' ');
+//Sum of Digits / Digital Root
+//https://www.codewars.com/kata/541c8630095125aba6000c00
+function digital_root(n) {
+  if (n > 9) {
+    n = n.toString().split('').reduce( function(sum, numeral) {
+      return sum += Number(numeral);
+    }, 0);
+    n = digital_root(n);
+  }
+  return n;
 }
-
-//надо было использовать map🤷‍♂️

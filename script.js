@@ -1,12 +1,5 @@
-//Who likes it?
-//https://www.codewars.com/kata/5266876b8f4bf2da9b000362
-function likes(names) {
-  names = names || [];
-  switch(names.length){
-    case 0: return 'no one likes this'; break;
-    case 1: return names[0] + ' likes this'; break;
-    case 2: return names[0] + ' and ' + names[1] + ' like this'; break;
-    case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
-    default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
-  }
+//Create Phone Number
+//https://www.codewars.com/kata/525f50e3b73515a6db000b83
+function createPhoneNumber(numbers){
+  return `(${numbers.splice(0, 3).join('')}) ${numbers.splice(0, 3).join('')}-${numbers.join('')}`
 }

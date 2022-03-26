@@ -1,10 +1,12 @@
-//Array.diff hero
-//https://www.codewars.com/kata/581fc49b55c3d2d83c0000f8
-function arrayDiffVeryFast(a, b) {
-  let resArr = [];
-  const bSet = new Set(b);
-  for (let i = 0, len = a.length; i < len; i++) {
-    if (!bSet.has(a[i])) resArr.push(a[i]); 
+//Who likes it?
+//https://www.codewars.com/kata/5266876b8f4bf2da9b000362
+function likes(names) {
+  names = names || [];
+  switch(names.length){
+    case 0: return 'no one likes this'; break;
+    case 1: return names[0] + ' likes this'; break;
+    case 2: return names[0] + ' and ' + names[1] + ' like this'; break;
+    case 3: return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this'; break;
+    default: return names[0] + ', ' + names[1] + ' and ' + (names.length - 2) + ' others like this';
   }
-  return resArr;
 }

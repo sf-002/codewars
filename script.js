@@ -1,5 +1,6 @@
-//You're a square!
-//https://www.codewars.com/kata/54c27a33fb7da0db0100040e
-var isSquare = function(n){
-  return Math.pow(n, 0.5) % 1 == 0; // fix me
+//Isograms
+//https://www.codewars.com/kata/54ba84be607a92aa900000f1
+function isIsogram(str){
+  setStr = new Set(str.toLowerCase().split(''));
+  return setStr.size == str.length;
 }

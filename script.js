@@ -1,6 +1,5 @@
-//Get the Middle Character
-//https://www.codewars.com/kata/56747fd5cb988479af000028
-function getMiddle(s)
-{
-  return s.length % 2 == 1 ? s[Math.floor(s.length / 2)] : s[s.length / 2 - 1] + s[s.length / 2]
+//You're a square!
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+var isSquare = function(n){
+  return Math.pow(n, 0.5) % 1 == 0; // fix me
 }

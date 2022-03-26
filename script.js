@@ -1,18 +1,19 @@
-//Take a Ten Minutes Walk
-//https://www.codewars.com/kata/54da539698b8a2ad76000228
-function isValidWalk(walk) {
-  if (walk.length == 10) {
-    if (walk.reduce(function(value, item) {
-      if (item == 's') value += 1
-      else if (item == 'n') value -= 1;
-      return value;
-    }, 0) == 0 
-       &&
-       walk.reduce(function(value, item) {
-      if (item == 'w') value += 1
-      else if (item == 'e') value -= 1;
-      return value;
-    }, 0) == 0  ) return true;
-  } else return false; 
+//Persistent Bugger.
+//https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
+function multiply(num) {
+  let word = num.toString();
+  num = 1;
+  for (let numChar of word) {
+    num *= Number(numChar);
+  };
+  return num;
 }
-//самое унылое нечитаемое решение
+
+function persistence(num) {
+  let i = 0;
+  while (num > 9) {
+    num = multiply(num);
+    i++;
+  };
+  return i;
+}

@@ -1,10 +1,12 @@
-//Square Every Digit
-//https://www.codewars.com/kata/546e2562b03326a88e000020
-function squareDigits(num){
-  let word = num.toString();
-  num = '';
-  for (let numChar of word) {
-    num += Math.pow(Number(numChar), 2);
-  };
-  return Number(num);
+//Disemvowel Trolls
+//https://www.codewars.com/kata/52fba66badcd10859f00097e
+function disemvowel(str) {
+  const vowels = new Set('aeiouAEIOU');
+  let i = 0, 
+      newStr = '';
+  for (let char of str) {
+    if (!vowels.has(char)) newStr += str[i];
+    i++;
+  }  
+  return newStr;
 }

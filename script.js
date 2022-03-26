@@ -1,6 +1,6 @@
-//Descending Order
-//https://www.codewars.com/kata/5467e4d82edf8bbf40000155
-function descendingOrder(n){
-  let arr = n.toString().split('');
-  return Number(arr.sort( (a, b) => b - a ).join(''));
+//Get the Middle Character
+//https://www.codewars.com/kata/56747fd5cb988479af000028
+function getMiddle(s)
+{
+  return s.length % 2 == 1 ? s[Math.floor(s.length / 2)] : s[s.length / 2 - 1] + s[s.length / 2]
 }

@@ -1,7 +1,6 @@
-//Disemvowel Trolls
-//https://www.codewars.com/kata/554b4ac871d6813a03000035
-function highAndLow(numbers){
-  let arr = numbers.split(' ');
-  arr.sort( (a, b) => a - b );
-  return `${arr[arr.length - 1]} ${arr[0]}`
+//Descending Order
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+function descendingOrder(n){
+  let arr = n.toString().split('');
+  return Number(arr.sort( (a, b) => b - a ).join(''));
 }

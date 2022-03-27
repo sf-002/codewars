@@ -1,6 +1,7 @@
-//Isograms
-//https://www.codewars.com/kata/54ba84be607a92aa900000f1
-function isIsogram(str){
-  setStr = new Set(str.toLowerCase().split(''));
-  return setStr.size == str.length;
+//List Filtering
+//https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
+function filter_list(l) {
+  return l.filter(function(item) {
+    return typeof(item) === 'number';
+    });
 }
